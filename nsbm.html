@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="en" xml:lang="en">
+<head>
+    <title>Green University - National School of Business Management</title>
+
+	<link type="text/css" rel="stylesheet"  href="all.css">
+	<link type="text/css" rel="stylesheet"  href="responsive.css">
+	<meta name="viewport" content="width=device_width,initial-scale=1.0">
+	<link rel="icon" type="image/png" href="LMS.png" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+</script>
+
+<script>
+	var imno=1;
+	setInterval(showPics3,3000);
+	function showPics3()
+	{
+		imno++;
+		var image=imno%7;
+		document.getElementById("t").src=image+".jpeg";
+	}
+</script>
+
+</head>
+
+
+<body >
+
+
+<div class="page-wrap">
+
+
+<table  width="100%"  border="0" align="left"  >
+	<div>
+	<tr>
+		<td width="800" height="96" id="tid"><img src="nsbmlogo.png" width="175" height="96" align="left"  >
+		<p align="right" ><font color="white">You are not logged in.<a href="http://localhost:81/user/login/index1.php"id="log" ><font color="lightblue"><font size="2px">(Login)</a></font></p></td>
+	</tr>
+	</div>
+  
+	<tr>
+		<td>
+		<img id="t" src="1.jpeg" height="400px" width="100%"/>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<nav>
+			<ul  color="white" >
+				<li class="drpdwn"><a href="research.html" class="drpbtn" >Research Publication</a>
+				</li>
+				
+				<li class="drpdwn"><a href="event.html" class="drpbtn" >Events</a></li>
+				
+				<li class="drpdwn"><a href="manual.html"class="drpbtn" ></a></li>
+				
+				<li class="drpdwn"><a href="about.html" class="drpbtn" >About us</a></li>
+				
+				<li class="drpdwn"><a href="contact.html"class="drpbtn" >Contact us</a></li>
+			</ul>
+			<div class="handle"><font size="6px" class="drpbtn">Menu<font></div>
+			</nav>
+		</td>
+	</tr>
+
+</table>
+
+<div>
+
+<br/>
+<hr/>
+
+<table width="100%"  border="0" id="happy">
+	
+	<tr  >
+	<th align="left" class="heads"><font size="5px">USER MANUAL</font></th>
+	<th  align="center" class="heads"><font size="5px">FACULTIES</font></th>
+	<th  align="center" class="heads"><font size="5px">CALENDER</font></th>
+	</tr>
+
+	<tr>
+	<td valign="top"  class="data">
+		
+		<div>
+		<table id="indd" width="76%" height="150PX"  >
+			<td class="r0" ><div class="column c1"><a title="Resources"   href="sbook.html" class="hpn"><font color="#003C79" size="4.5px">Student Handbooks</font></a></div></td></tr>
+<tr><td class="r0"><div class="columnc1"><a title="Resources"   href="award.html" class="hpn"><font color="#003C79" size="4.5px">Award Handbooks</font></a></div></td></tr>
+<tr><td class="r0"><div class="columnc1"><a title="Resources"   href="reg.html" class="hpn"><font color="#003C79" size="4.5px">Regulations</font></a></div></td></tr>
+<tr><td class="r0"><div class="columnc1"><a title="Resources"   href="ctime.html" class="hpn"> <font color="#003C79" size="4.5px">Class TIme Tables</font></a></div></td></tr>
+<tr><td class="r0"><div class="columnc1"><a title="Resources"   href="etime.html" class="hpn"> <font color="#003C79" size="4.5px">Examination TIme Tables</font></a></div></td></tr>
+
+			
+		
+		</table>
+		</div>
+		
+		
+		
+	</td>
+	
+	<td  valign="top" class="data">
+		
+		<div>
+		
+			<table width="100%" height="150" border="0"  >
+				<tr>
+					<td valign="top" align="center" >
+						<a href="it.html" align="center" >
+						<table class="categorylist">
+						<tr>
+						<td valign="top" class="categoryname" >
+						<a  href="course.html" id="pz" >SCHOOL OF COMPUTING</a>
+						</td>
+						
+						</tr>
+						</table>
+
+						</ul>
+						
+					</td>
+				</tr>
+	
+			</table>
+		</div>
+		
+
+	</td>
+	<td  valign="top" class="data">
+		
+		<div>
+		<table align="right" >
+			
+			<tr>
+			<td>
+			<script language="javascript" type="text/javascript">
+			var day_of_week = new Array('Sun','Mon','Tue','Wed','Thu','Fri','Sat');
+			var month_of_year = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+
+			var Calendar = new Date();
+
+			var year = Calendar.getFullYear();     
+			var month = Calendar.getMonth();   
+			var today = Calendar.getDate();    
+			var weekday = Calendar.getDay();    
+
+			var DAYS_OF_WEEK = 7;   
+			var DAYS_OF_MONTH = 31;   
+			var cal;    
+
+			Calendar.setDate(1);    
+			Calendar.setMonth(month);    
+
+
+
+
+			var TR_start = '<TR>';
+			var TR_end = '</TR>';
+			var highlight_start = '<TD WIDTH="30"><TABLE CELLSPACING=0 BORDER=1 BGCOLOR=DEDEFF BORDERCOLOR=CCCCCC><TR><TD WIDTH=20><B><CENTER>';
+			var highlight_end   = '</CENTER></TD></TR></TABLE></B>';
+			var TD_start = '<TD WIDTH="30"><CENTER>';
+			var TD_end = '</CENTER></TD>';
+
+
+
+			cal =  '<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=0 BORDERCOLOR=BBBBBB><TR><TD>';
+			cal += '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2>' + TR_start;
+			cal += '<TD COLSPAN="' + DAYS_OF_WEEK + '" BGCOLOR="#EFEFEF"><CENTER><B>';
+			cal += month_of_year[month]  + '   ' + year + '</B>' + TD_end + TR_end;
+			cal += TR_start;
+
+
+			for(index=0; index < DAYS_OF_WEEK; index++)
+				{
+					if(weekday == index)
+					cal += TD_start + '<B>' + day_of_week[index] + '</B>' + TD_end;
+					
+					else
+					cal += TD_start + day_of_week[index] + TD_end;
+				}
+
+			cal += TD_end + TR_end;
+			cal += TR_start;
+
+			for(index=0; index < Calendar.getDay(); index++)
+			cal += TD_start + '  ' + TD_end;
+
+
+			for(index=0; index < DAYS_OF_MONTH; index++)
+				{
+					if( Calendar.getDate() > index )
+						{
+							week_day =Calendar.getDay();
+
+
+								if(week_day == 0)
+									cal += TR_start;
+
+								if(week_day != DAYS_OF_WEEK)		
+									{
+										var day  = Calendar.getDate();
+
+ 
+										if( today==Calendar.getDate() )
+											cal += highlight_start + day + highlight_end + TD_end;
+
+
+										else
+										cal += TD_start + day + TD_end;
+									}
+
+  
+								if(week_day == DAYS_OF_WEEK)
+								cal += TR_end;
+						}
+
+
+				Calendar.setDate(Calendar.getDate()+1);
+
+			}
+
+			cal += '</TD></TR></TABLE></TABLE>';
+
+
+			document.write(cal);
+
+
+			</script>
+			</td>
+			</tr>
+			
+		</table>
+		
+		</div>
+		
+		
+	</td>
+	</tr>
+	<tr>
+	<td  class="data">
+	<table width="76%" height="150PX" bgcolor="#003C79" style="position:bottom;">
+	<tr>
+		<td><b>LOGIN</b></td>	</tr>	
+<tr id="hun">
+		<td>		
+     <form action="login.php" method="post">
+		Username: <input type="text" name="username"><p>
+		Password : <input type="password" name="password"><p>
+		<input type="submit">
+	</form>
+	</td>
+	</tr>
+	  		
+	</table>
+	</td>
+	</tr>
+	
+</table>
+</div>
+</table>
+
+<table  border="0">
+<tr><td >
+<table align="right"><tr><td valign="bottom">validate</td><td valign="bottom"><a href="http://validator.w3.org">html 5.0</a></td><td valign="bottom"><a href="http://css-validator.org">css 3</a></td></tr></table>
+</td></tr>
+
+<tr>
+<td valign="bottom">
+<footer>
+<div style=" background-color:#003C79; no-repeat; width:996px; height:20;"><p><font color="white"><center>Copyright © 2016 National School of Business Management. All Rights Reserved.<center></p></font>
+</div><br/>
+</footer>
+</td>
+</tr>
+</table>
+
+</div>
+<script>
+$('.handle').on('click',function(){
+	$('nav ul').toggleClass('showing');
+	});
+</script>
+
+
+
+</body>
+</html>
